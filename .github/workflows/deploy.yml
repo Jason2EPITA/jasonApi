@@ -38,7 +38,7 @@ jobs:
         password: ${{ secrets.MYPASS }}
         port: 22
         script: |
-          cd jason_perez
+          cd jason_perez/jasonApi
           git pull origin main
           docker pull ${{ secrets.DOCKER_USERNAME }}/jasonapi-web:latest
           docker compose down
